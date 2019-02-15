@@ -1,0 +1,24 @@
+@startuml "class"
+
+class Player
+class Game
+class ChessBoard
+class UI
+
+UI --|> QWidget : 继承自QWidget,显示画面
+UI --> Game : UI需要知道Game的细节来显示画面
+Game o--> LocalPlayer 
+Game o--> RemotePlayer
+Game o--> ChessBoard : 游戏由两个玩家和棋盘组成
+
+LocalPlayer --|> Player
+RemotePlayer --|> Player : 都是Player的实例
+
+RemotePlayer .. Network : 远端的玩家通过网络通信
+
+
+
+
+
+
+@enduml

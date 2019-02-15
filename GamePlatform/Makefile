@@ -227,6 +227,7 @@ DIST          = /opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/qt_config.prf \
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/toolchain.prf \
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -431,6 +432,7 @@ Makefile: GamePlatform.pro /opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/linux-g++/qmake.c
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/qt_config.prf \
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/toolchain.prf \
 		/opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -626,6 +628,7 @@ Makefile: GamePlatform.pro /opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/linux-g++/qmake.c
 /opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/qt_config.prf:
 /opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 /opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 /opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/toolchain.prf:
 /opt/Qt5.12.0/5.12.0/gcc_64/mkspecs/features/default_pre.prf:
