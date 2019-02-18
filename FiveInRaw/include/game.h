@@ -16,7 +16,7 @@ namespace fir{
       kSuspend,   //暂停
    };
 
-
+   class Widget;
    /**
     * 
     *    游戏类, 在一次对局中作为被动方,
@@ -24,9 +24,21 @@ namespace fir{
     * 
    **/
    class Game{
+   friend class Widget;
    public:
-      void Start();        // 开始游戏
+      Game() = default;
+      void Start()        // 开始游戏
+      {
+         qDebug("set point");
+         board_.points[8][8] = ChessPointType::kBlack;
+         board_.points[7][8] = ChessPointType::kWhite;
+         board_.points[0][0] = ChessPointType::kBlack;
+         qDebug("Set ok");
+      }
       void Act(void *act); // 被调用,然后执行动作
+      ~Game(){
+         qDebug("~Game");
+      }
    private:
       GameState state_;
       ChessBoard board_;

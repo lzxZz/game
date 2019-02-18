@@ -2,9 +2,8 @@
 #define MOONTREE_FIR_UI_H_
 
 #include <QtWidgets/QWidget>
-// namespace Ui {
-// class Widget;
-// }
+
+#include <include/game.h>
 namespace moontree {
 
 namespace fir{
@@ -16,8 +15,12 @@ class Widget : public QWidget
 public:
    explicit Widget(QWidget *parent = nullptr);
    ~Widget(){}
-
+   void SetGame(Game *game){
+      game_ = game;
+   }
 private:
+   Game *game_;      //UI对应的游戏
+   void Refersh();   // 刷新界面上的棋盘和棋子
    // 绘制
     void paintEvent(QPaintEvent *event);
     // 监听鼠标移动情况，方便落子
